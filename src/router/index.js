@@ -5,6 +5,14 @@ const routes = [
         path: '/',
         component: () => import('../views/Home.vue'),
     },
+    {
+        path : '/movies',
+        component: () => import('../views/movies.vue'),
+    },
+    {
+        path : '/actors',
+        component: () => import('../views/Actors.vue'),
+    }
 ]
 
 const router = createRouter({
