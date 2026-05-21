@@ -10,6 +10,10 @@ const routes = [
         component: () => import('../views/movies.vue'),
     },
     {
+        path : '/movie/:id',
+        component: () => import('../views/MovieDetails.vue'),
+    },
+    {
         path : '/actors',
         component: () => import('../views/Actors.vue'),
     }
