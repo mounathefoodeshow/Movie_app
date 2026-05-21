@@ -12,3 +12,11 @@ export const getMovieDetails = async (movieId) => {
     return response.data;  
 }
 // getMovieDetails(1226863);
+
+export const searchMovies = async (query) => {
+    const response = await instance.get('/search/movie', {
+        params: { query }
+    });
+    // console.log(response.data.results);
+    return response.data.results;
+}
