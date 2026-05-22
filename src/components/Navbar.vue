@@ -2,7 +2,7 @@
     <nav>
         <RouterLink to="/"> Home</RouterLink>
         <RouterLink to="/movies"> Movies</RouterLink>
-        <RouterLink to="/actors"> Actors</RouterLink>
+        <RouterLink to="/favorites"> Favorites</RouterLink>
         <input v-model="store.query" @focus="$router.push('/search')" type="text" placeholder="Search for a movie..."
             class="px-1 py-1 rounded-lg bg-gray-800 text-white placeholder-gray-400 w-64 focus:outline-none" />
     </nav>

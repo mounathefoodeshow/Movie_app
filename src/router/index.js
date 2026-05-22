@@ -18,8 +18,8 @@ const routes = [
         component: () => import('../views/SearchResults.vue'),
     },
     {
-        path : '/actors',
-        component: () => import('../views/Actors.vue'),
+        path : '/favorites',
+        component: () => import('../views/Favorites.vue'),
     }
 ]
 

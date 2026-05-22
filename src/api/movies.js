@@ -20,3 +20,5 @@ export const searchMovies = async (query) => {
     // console.log(response.data.results);
     return response.data.results;
 }
+
+
