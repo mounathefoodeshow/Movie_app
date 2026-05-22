@@ -13,13 +13,11 @@ export const useFavoritesStore = defineStore('favorites', () => {
     function addFavorite(movie) {
         if (!favorites.value.find(fav => fav.id === movie.id)) {
             favorites.value.push(movie)
-            // console.log(favorites.value);
         }
     }
     function removeFavorite(movieId) {
         favorites.value = favorites.value.filter(fav => fav.id !== movieId)
         localStorage.setItem('favorites', JSON.stringify(favorites.value)) 
-        // console.log(favorites.value);
     }
     return { favorites, addFavorite, removeFavorite }
 })

@@ -29,8 +29,8 @@ const movie = ref(null)
 onMounted(async () => {
     try {
         movie.value = await getMovieDetails(route.params.id)
-    } catch (e) {
-        console.error('Erreur:', e)
+    } catch (error) {
+        console.error('Error dans le chargement',error)
     }
 })
 
